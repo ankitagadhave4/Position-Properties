@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>sticky position</head>
+    <title>positions</title>
+<style>
+    .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        border: 2px dashed rgba(114, 186, 94, 0.35);
+        height: 800px;
+        background: rgba(114, 186, 94, 0.05);
+      }
+      
+      .shark-1 {
+        position: sticky;
+        top: 0;
+      }
+      
+      .shark-2 {
+        position: sticky;
+        top: 4rem;
+      }
+      
+      .shark-3 {
+        position: sticky;
+        bottom: 1rem;
+        align-self: flex-end;
+      }
+</style>
+<body>
+<div class="container">
+    <div class="item shark-1">
+      <img
+        src="./punk.png"
+        width="100"
+        alt="Sammy the Shark with a punk theme."
+      >
+    </div>
+    <div class="item shark-2">
+      <img
+        src="./pony.png"
+        width="100"
+        alt="Sammy the Shark with a magical pony theme."
+      >
+    </div>
+    <div class="item shark-3">
+      <img
+        src="./dino.png"
+        width="100"
+        alt="Sammy the Shark with a dinosaur theme."
+      >
+    </div>
+    <div class="item shark-4">
+      <img
+        src="./steampunk.png"
+        width="100"
+        alt="Sammy the Shark with a steampunk theme.">
+    </div>
+</div>
+</body>
+</html>
